@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+    <link rel="stylesheet" type="text/css" href="css/autorisation.css">
+</head>
+<body>
+<main>
+    <header>
+        <img src="image/login-24.png">
+        <button  id="identExit" type="button">&times;</button>
+        <span>Авторизация</span>
+    </header>
+    <form class="identForm" id="form">
+        <fieldset class="identData">
+            <input type="text" name="login" id="login" placeholder="Логин" maxlength="45" class="identLogin" autocomplete="off" required>
+            <input type="password" name="password" id="password" placeholder="Пароль" maxlength="45" class="identPassword" required>
+            <label  class="identSavePass">
+                <input type="checkbox" name="savepass" id="savepass" style="cursor: pointer">
+                <span class="identSaveText">сохранить пароль</span>
+            </label>
+        </fieldset>
+
+        <fieldset class="identButtons">
+            <button class="identButton" id="identCome" type="submit" style="
+            /*float: left;*/
+            color: #fff;
+            background-color: #822;
+            ">ВОЙТИ</button>
+        </fieldset>
+
+        <div class="identComments">
+            <div class="identComment">
+                <p>Доступ к программному обеспечению осуществляется только для зарегистрированнных пользователей.</p>
+            </div>
+        </div>
+    </form>
+</main>
+<script src="js/nsllib.js"></script>
+<script src="js/autorisation.js"></script>
+</body>
+</html>
