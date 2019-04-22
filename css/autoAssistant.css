@@ -1,0 +1,261 @@
+html, body {
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 90%; margin: 0; padding: 10px; width: 99%;
+    background-color: #ddd;color: #008; min-width: 700px;
+    font-size: 16px;
+}
+body {overflow: hidden}
+header {
+    padding-bottom: 10px;
+}
+header h1 {
+    display: inline;
+    font-size: 36px;
+    font-variant: small-caps;
+    color: #175095;
+    vertical-align: 25px;
+    padding-left: 10px;
+}
+th {border: 1px solid #295f98; padding: 5px; text-align: left;}
+td {border: 1px solid #295f98;}
+.selectNone {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.cuts {
+    height: 32px;padding-right: 10px;
+    display: table;
+}
+.aCardMain .cuts {
+    width: 100%;
+    margin-bottom: 2px;
+}
+.cuts>span {
+    display: table-cell;
+}
+.cuts>label {
+    display: table-cell;
+    border: outset 3px #ccc;
+    padding: 5px 10px 5px 2px;
+    margin-right: -7px;
+    color: #888;/*:checked*/
+    background-color: #ddd;
+    text-align: left;
+    cursor: pointer;
+}
+.cuts>label>input {display: none;}
+.cuts img {
+    height: 24px; padding-right: 10px;
+    vertical-align: middle;
+}
+#sNumbCut, #productList {
+    min-width: 14ch; /*105px*/
+    width: 20%
+}
+#sAuto, #searchFromSuppliers {
+    min-width: 19ch;  /*150px;*/
+    width: 30%;
+}
+.sNumbSec, .sAutoSec, .sSuppSec, .pListSec {
+    border: solid 2px #888;
+    margin-top: 5px;
+    margin-right: 11px;
+    padding: 10px;
+    /*background-color: #fed;*/
+    display: none;
+}
+#sNumbForm {
+    display: block;
+    height: 28px;
+    /*width: 90vw;*/
+    padding: 0 0 10px 10px ;
+}
+#sNumbForm>label {
+    /*display: inline-block;*/
+    border: outset 3px #ccc;
+    border-radius: 10px;
+    padding: 5px 10px 5px 2px;
+    margin-left: 5px;
+    color: #888;
+    background-color: #ddd;
+    text-align: left;
+    cursor: pointer;
+}
+#sNumbForm>label>input {display: none;}
+
+#sNumb {
+    padding: 5px 0 5px 2px;
+    min-width: 39%;
+    border: 2px inset;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+#sNumbForm>button {
+    border: outset 3px #ccc;
+    padding-left: 0;
+    cursor: pointer;
+}
+#sNumbForm img {
+     height: 24px; padding-right: 10px;
+     vertical-align: middle;
+ }
+.sNumbTabHead {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #295f98;
+    border-collapse: collapse;
+    height: 20px;
+}
+.sNumbTab, .aCard table{
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #295f98;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+#sNumbTab td, .info td {
+    border: 1px solid #295f98;
+    padding: 5px;
+}
+
+#sNumbTab img {
+    align-items: center;
+    cursor: pointer ;
+}
+.sNumbTabHead tr {height: 26px;}
+#sNumbBody>tr {height: 42px; cursor: pointer}
+.c1 {width: 20%; text-overflow: ellipsis}
+.c2 {width: 20%}
+.c3 {width: 50%; text-overflow: ellipsis; overflow: hidden}
+.c4 {width: 10%}
+/* --отображение авто-- */
+#sAutoAuto {
+    margin: 5px;
+    padding: 0;
+    height: 40px;
+    width: 100%;
+    vertical-align: middle;
+}
+#sAutoAuto>span {
+    float: left; /* Колонка слева */
+    width: 100px; /* Ширина колонки */
+    padding: 5px 0 5px 0
+}
+#sAutoAuto>button {
+    float: right; /* Колонка справа */
+    width: 33px; /* Ширина колонки */
+    height: 33px;
+    padding: 3px;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+}
+#sAutoAuto>div {
+    display: block;
+    margin-right: 79px; /* Ширина колонки справа */
+    margin-left: 100px; /* Ширина колонки слева */
+    padding: 0;
+}
+#sAutoCar {height: 30px; width: 100%;}
+
+#tree {height: 100%; width: 100%; overflow: auto;}
+#tree ul, #tree li {cursor: default;list-style: none;margin: 0; overflow: hidden;}
+#tree ul {height: 0; margin-left: 16px;}
+#tree li input {display: none;}
+#tree li input:checked ~ ul {height: auto;}
+
+#tree input + label:before {
+    content: '';
+    display: inline-block;
+    height: 16px; width: 16px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAIAAAAmzuBxAAAACXBIWXMAAAsSAAALEgHS3X78AAAAkElEQVQYlXWOvRWDQAyDv/DYK2wQSro8OkpGuRFcUjJCRmEE0TldCpsjPy9qzj7Jki62Pgh4vnqbbbEWuN+use/PlArwHccWGg780psENGFY6W4YgxZIAM339WmT3m397YYxxn6aASslFfVotYLTT3NwcuTKlFpNR2sdEak4acdKeafPlE2SZ7sw/1BEtX94AXYTVmyR94mPAAAAAElFTkSuQmCC) no-repeat 0 5px;
+}
+#tree input:checked + label:before {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAIAAAAmzuBxAAAACXBIWXMAAAsSAAALEgHS3X78AAAAeklEQVQYlX2PsRGDMAxFX3zeK9mAlHRcupSM4hFUUjJCRpI70VHIJr7D8BtJ977+SQ9Zf7isVG16WSQC0/D0OW/FqoBlDFkIVJ2xAhA8sI/NHbcYiFrPfI0fGklKagDx2F4ltdtaM0J9L3dxcVxi+zv62E+MwPs7c60dClRP6iug7wUAAAAASUVORK5CYII=) no-repeat 0 5px;
+}
+#tree span {margin-left: 16px;color: #0022bb;}
+#tree label, #tree span {cursor: pointer;}
+#tree label:hover, #tree span:hover {background-color: #ccccdd;}
+
+#sAutoProdData {cursor: pointer}
+.tpName {width: 11ch; margin-left: 5px;}
+.tpValue {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+.tp1, .tp2 {padding: 6px 0 0 3px; text-overflow: ellipsis; overflow: hidden}
+.tp3 {padding: 0;}
+
+#sAutoProdData td {height: 33px; cursor: pointer}
+.orig {background-color: #ddeedd;}
+
+.aCard {
+    background-color: #ffeedd;
+    color: #000088;
+    font-size: 16px;
+    overflow: hidden;
+    border: #aaccee outset 3px;
+    border-radius: 8px;
+}
+
+.headCard {
+    height: 24px;
+    width: 100%;
+    background-color: #bbddff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    cursor: move;
+    padding: 0;
+}
+.headCard button {
+    display: inline-block;
+    float: right;
+    background-color: #000088;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 24px;
+    height: 100%;
+}
+.headCard img {
+    display: inline-block;
+    height: 100%;
+    float: left;
+}
+.headCard div {
+    color: #880000;
+    display: inline-block;
+    height: 100%;
+    float: left;
+    font-size: 16px;
+    padding-top: 3px;
+    padding-left: 5px;
+}
+.headCard span {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 100%;
+    padding-top: 5px;
+}
+.aCardMain {
+    margin: 0; padding: 5px; overflow: hidden;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+.info {overflow: auto; }
+.foto, .anal, .auto {overflow: hidden; display: none;}
+.foto >div {height: 32px; margin: 2px; overflow-x: auto}
+.foto >img {max-width: 100%; padding: 1px; box-sizing: border-box}
+.ico {border: 2px #999999 outset; cursor: pointer; height: 24px; box-sizing: content-box;margin-right: 2px }
+.ico img {height: 24px}
+.foto .cutCurrent {border-style: inset}
+.anal tr {height: 33px;}
+.anal td {cursor: pointer;}
+.auto tr {height: 22px; cursor: default}
+.auto th {font-size: 14px; font-weight: 600; padding-left: 2px;}
+.auto td {text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding-left: 2px }
