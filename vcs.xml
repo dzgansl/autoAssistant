@@ -10,9 +10,13 @@
           <option name="url" value="https://github.com/dzgansl/" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/dzgansl/dictionaries.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="F:\htdocs\project\autoAssistant" />
+    <option name="cloneParentDir" value="F:\htdocs\project\dictionaries" />
   </component>
   <component name="Vcs.Log.App.Settings">
     <option name="MIGRATED" value="true" />
